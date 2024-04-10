@@ -1,0 +1,17 @@
+[tool.poetry]
+name = "tschat"
+version = "0.1.0"
+description = ""
+authors = ["ksm <ksm@daiblab.com>"]
+readme = "README.md"
+
+[tool.poetry.dependencies]
+python = "^3.11"
+django = "^5.0.4"
+djangorestframework = "^3.15.1"
+django-mssql-backend = "^2.8.1"
+
+
+[build-system]
+requires = ["poetry-core"]
+build-backend = "poetry.core.masonry.api"
