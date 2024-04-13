@@ -27,8 +27,9 @@ class GetUnreadMSG(APIView):
         if key == 'abcdef': #db에서 user 키 발급
             user_id = request.data.get('data', {}).get('user_id')
             if user_id:
-                messages = Message.objects.filter(user_id=user_id)
-                serializer = MessageSerializer(messages, many=True)
+                messages = Message.objects.filter(user_id=user_id).update(is_read=True)
+                msseages_read =Message.objects.filter(user_id=user_id)
+                serializer = MessageSerializer(msseages_read, many=True)
                 return Response(serializer.data)
             else:
                 return Response({'error': 'Missing or invalid userid'}, status=400)

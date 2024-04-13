@@ -63,6 +63,22 @@ files = [
 django = ">=3.0"
 
 [[package]]
+name = "mssql-django"
+version = "1.4.2"
+description = "Django backend for Microsoft SQL Server"
+optional = false
+python-versions = "*"
+files = [
+    {file = "mssql-django-1.4.2.tar.gz", hash = "sha256:430b7e19eaec1396c9ab32abb4d3378fec375fb23bf93f61140fdcaaa7052d6c"},
+    {file = "mssql_django-1.4.2-py3-none-any.whl", hash = "sha256:a9934f3fc9a507a7ac5be21ad02109ba5352e56bf17959de7f29bbc5ad97e762"},
+]
+
+[package.dependencies]
+django = ">=3.2,<5.1"
+pyodbc = ">=3.0"
+pytz = "*"
+
+[[package]]
 name = "pyodbc"
 version = "5.1.0"
 description = "DB API module for ODBC"
@@ -103,6 +119,17 @@ files = [
 ]
 
 [[package]]
+name = "pytz"
+version = "2024.1"
+description = "World timezone definitions, modern and historical"
+optional = false
+python-versions = "*"
+files = [
+    {file = "pytz-2024.1-py2.py3-none-any.whl", hash = "sha256:328171f4e3623139da4983451950b28e95ac706e13f3f2630a879749e7a8b319"},
+    {file = "pytz-2024.1.tar.gz", hash = "sha256:2a29735ea9c18baf14b448846bde5a48030ed267578472d8955cd0e7443a9812"},
+]
+
+[[package]]
 name = "sqlparse"
 version = "0.4.4"
 description = "A non-validating SQL parser."
@@ -132,4 +159,4 @@ files = [
 [metadata]
 lock-version = "2.0"
 python-versions = "^3.11"
-content-hash = "4562831b11b88a81de9f90ccb335301673ebec68d8819c465cc858b38d40e5ae"
+content-hash = "72b6c9ad79425b8da305c0346ea5e77468c5aa82853b4202fd2f1da29459419d"
