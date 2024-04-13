@@ -91,7 +91,9 @@ DATABASES = {
         'PASSWORD': 'daib0723',
         'HOST': 'office.daios.net',  # 예: 'localhost' 또는 '127.0.0.1'
         'PORT': '1433',  # 예: '1433'
-        
+        'OPTIONS': {
+            'driver': 'ODBC Driver 17 for SQL Server',
+        },
     },
 
 }
