@@ -84,18 +84,28 @@ DATABASES = {
     #     'NAME': BASE_DIR / 'db.sqlite3',
     # }
     
-    'default': {
+    # 'default': {
+    #     'ENGINE': 'mssql',
+    #     'NAME': 'tschat',
+    #     'USER': 'daibuser',
+    #     'PASSWORD': 'daib0723',
+    #     'HOST': 'office.daios.net',  # 예: 'localhost' 또는 '127.0.0.1'
+    #     'PORT': '1433',  # 예: '1433'
+    #     'OPTIONS': {
+    #         'driver': 'ODBC Driver 17 for SQL Server',
+    #     },
+    # },
+ 'default': {
         'ENGINE': 'mssql',
-        'NAME': 'tschat',
-        'USER': 'daibuser',
-        'PASSWORD': 'daib0723',
-        'HOST': 'office.daios.net',  # 예: 'localhost' 또는 '127.0.0.1'
-        'PORT': '1433',  # 예: '1433'
+        'NAME': 'chatbot',
+        'USER': 'chatdbd',
+        'PASSWORD': 'P@ssw0rd123!@#',
+        'HOST': '10.42.185.51',  # 예: 'localhost' 또는 '127.0.0.1'
+        'PORT': '1533',  # 예: '1433'
         'OPTIONS': {
             'driver': 'ODBC Driver 17 for SQL Server',
         },
     },
-
 }
 
 
